@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKUAT Attendance System</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>
+        <h1>JKUAT Student Attendance System</h1>
+    </header>
+
+    <main>
+        <form>
+            <label for="class"><strong>School:</strong></label>
+            <select id="class" name="class">
+                <option value="class1">COETEC</option>
+                <option value="class2">COHES</option>
+                <option value="class2">COPAS</option>
+                <option value="class2">COANRE</option>
+                <option value="class2">COHRED</option>
+                <!-- Add more class options as needed -->
+            </select>
+            <hr>
+            <label for="class"><strong>Course:</strong></label>
+            <select id="class" name="class">
+                <option value="class1">Mechatronics Engineering</option>
+                <option value="class2">Mechanical Engineering</option>
+                <option value="class2">Electrical Engineering</option>
+                <option value="class2">Information Technology</option>
+                <option value="class2">Geospatial Engineering</option>
+                <!-- Add more class options as needed -->
+            </select>
+            <hr>
+            <label for="class"><strong>Year:</strong></label>
+            <select id="class" name="class">
+                <option value="class1">1st Year</option>
+                <option value="class2">2nd Year</option>
+                <option value="class2">3rd Year</option>
+                <option value="class2">4th Year</option>
+                <option value="class2">5th Year</option>
+                <!-- Add more class options as needed -->
+            </select>
+            <hr>
+            <label for="class"><strong>Unit:</strong></label>
+            <select id="class" name="class">
+                <option value="class1">ELE 101</option>
+                <option value="class2">ELE 102</option>
+                <option value="class2">ELE 103</option>
+                <option value="class2">ELE 104</option>
+                <option value="class2">ELE 105</option>
+                <!-- Add more class options as needed -->
+            </select>
+            <hr>
+
+            <label for="date"><strong>Date:</strong></label>
+            <input type="date" id="date" name="date">
+
+            <button type="button" onclick="markAttendance()">Mark Attendance</button>
+        </form>
+
+        <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Attendance Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows for student attendance will be dynamically populated here -->
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <footer>
+            <p>&copy; 2023 Jomo University of Agriculture & Technology. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </footer>
+    </main>
+    <footer>
+        <p>&copy; 2023 Jomo Kenyattta University of Agriculture & Technology. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
